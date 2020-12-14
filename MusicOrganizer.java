@@ -103,4 +103,12 @@ public class MusicOrganizer
             System.out.println("No encontrado");
         } 
     }
+    
+    public void playSamplesArtist(String artista){
+        for (String filename :files){            
+            if(filename.contains(artista)){
+                player.playSample(filename);
+            }
+        }    
+    }
 }
