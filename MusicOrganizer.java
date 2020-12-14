@@ -90,4 +90,17 @@ public class MusicOrganizer
             contador ++;
         }
     }
+    
+    public void listMatching(String searchString){
+        boolean encontrado = false;
+        for (String filename :files){            
+            if(filename.contains(searchString)){
+                System.out.println(filename);
+                encontrado = true;
+            }
+        }
+        if (encontrado == false){
+            System.out.println("No encontrado");
+        } 
+    }
 }
