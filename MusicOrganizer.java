@@ -84,10 +84,12 @@ public class MusicOrganizer
     }
     
     public void listAllFiles(){
-        int contador = 0;
-        while (contador < files.size()){
-            System.out.println(files.get(contador));
+        int contador = 1;
+        int index = 0;
+        while (index < files.size()){
+            System.out.println(contador + ". " + files.get(index));   
             contador ++;
+            index ++;
         }
     }
     
